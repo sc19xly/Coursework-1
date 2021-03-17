@@ -26,16 +26,7 @@ typedef struct _BookArray {
 
 //saves the database of books in the specified file
 //returns 0 if books were stored correctly, or an error code otherwise
-int store_books(FILE *file)
-{
-	if((file=fopen("library.txt","r"))==NULL)
-	{
-		printf("File open error!\n");
-		return 1;
-	}
-	file=fopen("library.txt","a");
-	fclose(file);
-}
+int store_books(FILE *file);
 	
 
 //loads the database of books from the specified file
@@ -72,8 +63,9 @@ BookArray find_book_by_year (unsigned int year);
 
 //managers'information
 struct manager {
-	int username;
+	char username[20];
 	char password[20];
+	struct manager*next;
 };
 
 //change password
