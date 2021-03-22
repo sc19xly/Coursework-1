@@ -1,0 +1,54 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ddl/桌面/producer programming/cw1/book_management.h
+stdlib.h
+-
+math.h
+-
+string.h
+-
+stdio.h
+-
+
+/home/ddl/桌面/producer programming/cw1/main.c
+book_management.h
+/home/ddl/桌面/producer programming/cw1/book_management.h
+stdlib.h
+-
+stdio.h
+-
+math.h
+-
+string.h
+-
+
+/home/ddl/桌面/producer programming/cw1/manager.c
+book_management.h
+/home/ddl/桌面/producer programming/cw1/book_management.h
+stdlib.h
+-
+stdio.h
+-
+math.h
+-
+string.h
+-
+
+/home/ddl/桌面/producer programming/cw1/user.c
+book_management.h
+/home/ddl/桌面/producer programming/cw1/book_management.h
+stdlib.h
+-
+stdio.h
+-
+math.h
+-
+string.h
+-
+

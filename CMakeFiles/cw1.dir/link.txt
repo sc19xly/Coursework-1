@@ -1,0 +1,1 @@
+/usr/bin/cc  -fdump-rtl-expand -g   CMakeFiles/cw1.dir/main.c.o CMakeFiles/cw1.dir/manager.c.o CMakeFiles/cw1.dir/user.c.o  -o cw1 -rdynamic 
