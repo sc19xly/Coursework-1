@@ -79,11 +79,13 @@ void remove_book(){
 		if(p->total!=p->copies)
 	{
 		printf("The book is on loan!\n");
+		getchar();
 		return;
 	}
 	      else  if(exist==0)
         {
                 printf("The book do not exist!Back to the manager interface!\n");
+			getchar();
                 return;
         }
         p=bookhead;

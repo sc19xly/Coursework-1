@@ -255,6 +255,7 @@ void borrowbook(struct users*b){
         else
                 printf("Borrow successfully!\n");
         printf("Back to the user interface.\n");
+	getchar();
 }
 
 void returnbook(struct users*b){
@@ -275,9 +276,9 @@ void returnbook(struct users*b){
 		times++;
 		printf("Enter the name of the book you want to return:\n");
                fgets(name,100,stdin);
-		for(i=0;i<num;i++)
+		for(i=0;i<b->booknum;i++)
 		{
-			if(strcmp(name,b->booklist[num]))
+			if(strcmp(name,b->booklist[i])==0)
 			{
 				flag=i;
 				exist =1;
@@ -299,7 +300,7 @@ void returnbook(struct users*b){
 				break;
 			}
                 }
-        }
+	}
 		if(exist ==0)
 			return;
 			while(p!=NULL)
